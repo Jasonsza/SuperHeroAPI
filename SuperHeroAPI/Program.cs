@@ -15,14 +15,14 @@ builder.Services.AddCors(options => options.AddPolicy(name: "SuperHeroOrigins",
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline..
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseCors("SuperHeroOrigins");
+app.UseCors("SuperHeroOrigins"); 
 
 app.UseHttpsRedirection();
 
